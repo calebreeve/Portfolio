@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #447884;
+    color: #fff;
+    text-align: center;
+}
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-title {
+    background-color: #012B35;
+}
+
+/* Nav Bar */
+
+#nav-container {
+    min-height: 450px;
+    width: 100%;
+    border-bottom: 3px solid #012B35;
+}
+
+#nav-container .bg-image{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-image: url('../img/salt-lake-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.container .badge{
+    float: left;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: #0F434F;
+    font-weight: bold;
+}
+
+#nav-container nav {
+    float: right;
+    padding-top: 40px;
+    text-align: center;
+    width: auto;
+}
+
+#nav-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#nav-container li {
+    display: inline;
+}
+
+#nav-container li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px;
+}
+
+#nav-container li a:hover{
+    color: #0F434F;
+    font-weight: bold;
+}
+
+#nav-container .contact {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 3px solid #fff;
+}
+
+#nav-container .contact a{
+    display: inline-block;
+    color: #fff;
+    padding: 0 30px;
+}
+
+#nav-container .contact a:hover {
+    color: #0F434F;
+}
+
+/* Home */
+
+#home .content {
+    width: 100%;
+}
+
+
+/* Skills */
+
+#skills {
+    margin: 20px auto;
+}
+
+#skills #box-container {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 40px;
+}
+
+#skills #box-container .box {
+    background-color: #0F434F;
+    margin: 0 20px;
+    height: 300px;
+    width: 30%;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+#skills #box-container .box .icon {
+    margin-top: 10px;
+}
+
+/* About */
+
+#about {
+    margin: 20px auto;
+}
+
+/* Interests */
+
+#interests {
+    margin: 20px auto;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #012B35;
+    height: 80px;
+
+}
+
+footer p {
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+@media(max-width: 736px) {
+
+    .container {
+        width: auto;
+        margin: auto;
+    }
+
+    #nav-container {
+        align-items: center;
+    }
+    #nav-container .badge {
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+    #nav-container nav {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+
+    #nav-container nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-container nav a{
+        margin: auto;
+        padding: 20px;
+    }
+
+    #nav-container nav .contact {
+        width: 80%;
+        margin: auto;
+    }
+
+    #skills .container {
+        align-items: center;
+    }
+    #skills #box-container{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #skills #box-container .box {
+        width: auto;
+        margin-top: 15px;
+    }
+}

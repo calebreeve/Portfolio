@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Allerta Stencil";
+    line-height: 1.8;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+#navigation {
+    background-color: rgba(0,0,0,.85);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+#navigation #nav-list{
+    list-style: none;
+    height: 80px;
+    width: 800;
+    display: flex;
+    background-color: rgba(255,255,255, .35);
+    border-radius: 15px 15px;
+    flex-basis: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    align-content: center;
+}
+
+#navigation #nav-list li {
+    flex-basis: 80px;
+    margin: auto auto;
+}
+
+#navigation #nav-list li:hover {
+    text-shadow: 1px 1px 2px black, 0 0 28px white;
+}
+
+#navigation #nav-list .active {
+    color: white;
+    text-shadow: transparent;
+}
+
+#navigation #nav-list a {
+    padding: .5em;
+}
+
+#navigation #nav-list li:first-child,
+#navigation #nav-list li:nth-child(n + 5){
+    order: 3;
+}
+
+#navigation #nav-list li:nth-child(n + 5){
+    text-align: right;
+}
+
+#navigation #nav-list li:first-child{
+    margin: 0 auto;
+    flex-basis: auto;
+}
+
+#navigation #nav-list li:first-child:hover {
+    background-color: transparent;
+}
+
+#navigation #nav-list li img {
+    width: 85px;
+    margin-top: 2px;
+}
+
+#navigation #nav-list li a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+#navigation #nav-list li a:hover {
+    color: white;
+}
+
+#navigation .bookbutton {
+    align-content: flex-end;
+}
+
+/* main section */
+
+#main {
+    display: flex;
+    width: 80%;
+    margin: 65px auto;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,.45);
+    border-radius: 15px;
+}
+
+.main-container {
+    flex-grow: 1;
+    width: 38%;
+    height: auto;
+    flex-shrink: 2;
+    color: #fff;
+    font-size: 1.0rem;
+    margin: 18px;
+}
+
+.main-container img {
+    object-fit: contain;
+    width: 20vw;
+    border-radius: 15px;
+}
+
+.main-container ul {
+    list-style: none;
+    display: inline;
+    padding:0;
+}
+
+.main-container li {
+    display: inline-block;
+    margin: 10px;
+    background-color: rgba(255,255,255,.45);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.main-container li i{
+    margin-top: 8px;
+    font-size: 1.9rem;
+    color: white;
+}
+
+.main-container li i:hover {
+    color: black;
+}
+
+footer {
+    background-color: rgba(0,0,0,.85);
+    color: #fff;
+    text-align: center;
+}
+
+footer #info p{
+    margin: 10px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Schedule Page CSS */
+
+#book {
+    margin: auto;
+    text-align: center;
+}
+
+#times table {
+    margin: 30px auto;
+    color: white;
+    width: 40%;
+    background-color: rgba(0,0,0,.65);
+    border-radius: 15px;
+}
+
+#times table td {
+    margin: 20px;
+}
+
+/* Services Page CSS */
+
+#services {
+    background-color: rgba(0,0,0,.75);
+    width: 80%;
+    color: white;
+    margin: 40px auto;
+    border-radius: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.service {
+    display: flex;
+}
+
+.description {
+    width: 60%;
+    text-align: left;
+    margin-left: 20px;
+    flex-shrink: 2;
+}
+
+.service img {
+    width: 25%;
+    height: 25%;
+    margin-top: 40px;
+    align-items: flex-end;
+    margin-left: 10%;
+    border-radius: 10px;
+    flex-shrink: 1;
+}

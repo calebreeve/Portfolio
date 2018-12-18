@@ -11,20 +11,24 @@
 </head>
 <body>
     <nav id="navigation">
-        <ul id="nav-list">
-            <li><img src="./img/black_cat.svg" alt="black cat logo"></li>
-            <li><a href="#" class="active">home</a></li>
-            <li><a href="schedule.html">hours</a></li>
-            <li><a href="./services.html">services</a></li>
-            <li><a href="#">social</a></li>
-            <li><a href="#">barbers</a></li>
-            <li><a href="#">gallery</a></li>
-            <li class='rwdmenu' onclick='rwdFunction(this)'>
+        <div id="navigator">
+            <div class="companyLogo">
+                <img class="logo" src="./img/black_cat.svg" alt="black cat logo">
+            </div>
+            <ul id="nav-list">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="./services.html">services</a></li>
+                <li><a href="schedule.html">hours</a></li>
+                <li><a href="#">barbers</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">social</a></li>
+            </ul>
+            <div class='rwdmenu' onclick='rwdFunction(this)'>
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-            </li>
-        </ul>
+            </div>
+        </div>
         <img src="./img/BlackCatHand.png" alt="blackcat hand" style="width: 5%;margin-right: 5px;">
         <button class="button" name="bookNow"></button>
     </nav>

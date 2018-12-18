@@ -133,10 +133,13 @@ body {
     width: 20vw;
     border-radius: 15px;
 }
+.main-container:last-child img{
+    width: 8vw;
+}
 
 .main-container ul {
     list-style: none;
-    display: inline;
+    display: block;
     padding:0;
 }
 

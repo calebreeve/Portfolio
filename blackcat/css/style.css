@@ -229,6 +229,9 @@ footer #info p{
 /* Media queries */
 
 @media screen and (max-width: 600px){
+    body{
+        background-position: -200px;
+    }
     #navigation{
     }
     #nav-list{

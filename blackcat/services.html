@@ -10,15 +10,29 @@
 </head>
 <body style="background-image: url('./img/services.jpg')">
     <nav id="navigation">
-        <ul id="nav-list">
-            <li><img src="./img/black_cat.svg" alt="black cat logo"></li>
-            <li><a href="./index.html">home</a></li>
-            <li><a href="./schedule.html">hours</a></li>
-            <li><a href="#" class="active">services</a></li>
-            <li><a href="#">social</a></li>
-            <li><a href="#">staff</a></li>
-            <li><a href="#">gallery</a></li>
-        </ul>
+        <div id="navigator">
+            <div class="companyLogo">
+                <img class="logo" src="./img/black_cat.svg" alt="black cat logo">
+            </div>
+            <ul id="nav-list">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="./services.html" class="active">services</a></li>
+                <li><a href="#">barbers</a></li>
+                <li><a href="#">social</a></li>
+                <li><a href="./schedule.html">hours</a></li>
+            </ul>
+            <div class='rwdmenu' onclick='rwdFunction(this)'>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class='bookNow'>
+            <img src="./img/BlackCatHand.png" alt="blackcat hand" style="width: 5%;margin-right: 5px;">
+            <a class="button" target="_blank" href="https://squareup.com/appointments/book/baa3e06d-48ce-4236-9198-3bf4f4ec1e3e/C79985AVHDP9C/services"></a>
+            <img src="./img/BlackCatHand.png" alt="blackcat hand" style="width: 5%;margin-left: 5px; transform: scaleX(-1);">
+        </div>
     </nav>
     <ul id="services">
         <li class="service">
